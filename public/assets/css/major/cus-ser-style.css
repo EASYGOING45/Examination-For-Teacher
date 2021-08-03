@@ -1,0 +1,27 @@
+﻿#ser-aside{font-size: 12px;text-align: center;font-family: "microsoft yahei", simsun;position: fixed;right: 2px;bottom:80px;height:266px;max-width: 80px;z-index:10;}
+/*收起状态*/
+#ser-aside .nail{display: none;width: 50px;height: 50px;background-color: #c8cfd7;color: #fff;font-size: 12px;border-radius: 2px 0 0 2px;cursor: pointer;line-height: 14px;}
+#ser-aside .nail:hover{background-color: #fe8333;}
+/*展开状态*/
+#ser-aside .info-txt{display: none;font-size: 14px;width: 40px;margin: 4px;}
+#ser-aside .w-txt{display: block;color: #fff;line-height: 20px;padding-top: 5px;}
+#ser-aside .ser-all{}
+#ser-aside .ser-all .cnt{border: 1px solid #c8cfd7;width: 48px;height: 48px;margin-top: -1px;background-color: #fff;position: relative;}
+#ser-aside .ser-all .cnt span{display: inline-block; background: url("/static/themes/yiban/img/ser-icons.f9c6531b16b2.png") no-repeat;margin: 0 auto;-webkit-transition: all .2s;-moz-transition: all .2s;-ms-transition: all .2s;-o-transition: all .2s;transition: all .2s;}
+#ser-aside .ser-all .cnt span.qq{background-position: 0 -34px; width: 32px;height: 31px;margin-top: 9px;}
+#ser-aside .ser-all .cnt span.tel{background-position: 0 0; width: 23px;height: 32px;margin-top: 9px;}
+#ser-aside .ser-all .cnt span.mail{background-position: -34px -26px; width: 31px;height: 22px;margin-top: 14px;}
+#ser-aside .ser-all .cnt span.group{background-position: -25px 0; width: 38px;height: 24px;margin-top: 12px;}
+#ser-aside .ser-all .cnt span.go-top{background-position: -34px -50px; width: 27px;height: 15px;margin-top: 15px;}
+#ser-aside .ser-all .cnt .hid-cnt{height: 50px;width: 0;background-color: #fe8333;color: #fff;position: absolute;top: -1px;left:0;overflow:hidden;-webkit-transition: all .3s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#ser-aside .ser-all .cnt .hid-cnt p{text-align: left;width: 180px;display: inline-block;vertical-align: middle;margin-top: 4px;padding-left: 10px;color:#fff;}
+#ser-aside .ser-all .cnt:hover span{display: none;}
+#ser-aside .ser-all .cnt:hover .info-txt{display: block;color:#fe8333;}
+#ser-aside .ser-all .cnt:hover .hid-cnt{width: 189px;left: -190px;}
+#ser-aside .ser-all .cnt:hover a{color: #fe8333;}
+#ser-aside .ser-all .cnt a{text-decoration: none;color: #c8cfd7;}
+/*收起按钮*/
+#ser-aside .ser-all .btn{width: 19px;height: 19px;border: 1px solid #c8cfd7;color: #c8cfd7;cursor: pointer;float: right;background-color: #fff;}
+#ser-aside .ser-all .btn:hover{color: #fe8333;border-color: #fe8333;}
+/*返回顶部按钮*/
+#ser-aside .back-top-btn{display: none;}

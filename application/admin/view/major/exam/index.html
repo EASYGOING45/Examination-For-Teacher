@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+ 
+{foreach name="questionList" item="question" key="key"}
+<label for="name">{$key+1}: {$question.question_name}</label>
+
+{eq name ="question.type" value="1"}
+<div>
+    {foreach name="question.answers" item="ans" key="k"}
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline{$key}" id="optionsRadios" value="{$ans.answer_code}">{$ans.answer_code}: {$ans.answer}
+    </label>
+    {/foreach}
+</div>
+{/eq}
+
+{eq name ="question.type" value="2"}
+<div>
+    {foreach name="question.answers" item="ans" key="k"}
+    <label class="checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox{k}" value="{$ans.answer_code}"> {$ans.answer_code}: {$ans.answer}
+    </label>
+    {/foreach}
+</div>
+{/eq}
+{eq name ="question.type" value="3"}
+<div>
+    {foreach name="question.answers" item="ans" key="k"}
+    <label class="radio-inline">
+        <input type="radio" name="optionsRadiosinline{$key}" id="optionsRadios" value="{$ans.answer}">{$ans.answer}
+    </label>
+    {/foreach}
+</div>
+{/eq}
+
+{/foreach}
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0072)#question-33202504 -->
+<html lang="zh-cn"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="Content-Security-Policy" content="frame-src *">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="__CDN__/assets/css/major/reset.min.css" type="text/css">
+	<link rel="stylesheet" href="__CDN__/assets/css/major/header-footer-style.min.css" type="text/css">
+	<link rel="stylesheet" href="__CDN__/assets/css/major/cus-ser-style.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="https://www.yooc.me/static/themes/yiban/images/favicon_yooc.aaf2515027b2.ico">
+	<!-- <script type="text/javascript" src="./assets/jquery.min.2193e88f1aed.js.下载"></script> -->
+  <script type="text/javascript" src="./assets/saved_resource"></script>
+	<!-- <script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "//hm.baidu.com/hm.js?435408cf352a14d68ef6861b9d51158c";
+		  var s = document.getElementsByTagName("script")[0];
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script> -->
+
+
+  
+      <title>
+       考试详情 - 
+      </title>
+  
+
+
+  
+  <link rel="stylesheet" href="__CDN__/assets/css/major/yooc-header-style.css">
+  <script>window.__jdialog = {register: true,theme:"yiban"};</script>
+  <script src="__CDN__/assets/js/backend/major/index/jdialog.min.js"></script>
+  <script src="__CDN__/assets/js/backend/major/index/yb-group.js"></script>
+  <script src="__CDN__/assets/js/backend/major/index/yooc.hovercard.js"></script>
+  <link rel="stylesheet" href="__CDN__/assets/css/major/yooc-footer-new.css" type="text/css">
+  <style>
+    footer{margin-top: 0!important;}
+  </style>
+  
+  <link rel="stylesheet" href="__CDN__/assets/css/major/course-topic-aside.css">
+  <link rel="stylesheet" href="__CDN__/assets/css/major/members.css">
+  <link rel="stylesheet" href="__CDN__/assets/css/major/create-exam-paper.css">
+  <link rel="stylesheet" href="__CDN__/assets/css/major/exam-detial.css">
+
+
+</head>
+
+<body>
+<script src="__CDN__/assets/js/backend/major/index/customer-service-yooc.js"></script>
+<script type="text/javascript">
+    document.write("<script src=\"/statistic/?"+Math.random()+"\"></scr"+"ipt>");
+</script>
+
+<script>
+  $(function () {
+    $('#search').on('click',function() {
+      var input = $(this).prev();
+      if(input.hasClass('search-on')){
+          $('#search-form-bar').submit();
+      }else{
+        $(this).prev().addClass('search-on');
+        $(this).prev().focus();
+      }
+    });
+
+  });
+
+
+    -function(a,img){
+  var show={top:50,opacity:1},hide={top:60,opacity:0};
+  img.hide().css(hide);
+  a.on('mouseover',function(){
+    img.stop(1,1).animate(show).show();
+  }).on('mouseout',function(){
+    img.stop(1,1).animate(hide,function(){
+      img.hide();
+    });
+  });
+}($('#nav-span'),$('#nav-img'));
+</script>
+
+  
+<div id="group-data" data-group-id="3489087" data-exam-id="209639" data-csrf="R3ykm5RRecCCnAxS1syFMHLdzuMSJbpP" data-questions="50"></div>
+  
+  <section class="wrapper">
+    <!-- 左边主内容start -->
+    <section class="ctx-container">
+      <div class="ctx-header create">
+        <div class="h1-container">
+          <h1>有50道题总分100分的试卷</h1>
+          <p>考卷题目：50</p>
+          <p>考卷总分：100</p>
+          <p>考试时长：90分钟</p>
+          <p>考试人数：0</p>
+        </div>
+      </div>
+      <div class="exam-board clearfix">
+        <div class="board-item">
+          <p>答题提交方式：整卷提交</p>
+          <p>是否显示排名：否</p>
+          <p>是否顺序打乱：是</p>
+          <p>是否选项打乱：是</p>
+        </div>
+        <p class="board-item">考试时效</p>
+        <p class="board-item">2016.03.23 00:00 - 2016.03.25 23:59</p>
+        <p class="border-right board-item">出题类型</p>
+        <p class="board-item">整卷型</p>
+        <p class="board-item">成绩公布</p>
+        <p class="board-item">2016.03.26 00:00</p>
+        <p class="border-right board-item">校方认证</p>
+        <p class="board-item">不需要</p>
+        <p class="board-item">考试要求</p>
+        <p class="board-item" title="" style="width:749px;"></p>
+      </div>
+      <div class="exam-detial-container">
+        <h2>二、单项选择题（在下列各题的备选答案中选择一个正确的。每题2 分，40分）<span>(共计40分)</span></h2>
+        {foreach name="questionList" item="question" key="key"}
+          <div class="question-board" id="question-{$key}">
+			{eq name ="question.type" value="1"}
+			<p class="q-cnt crt">{$key+1}、<span>[2分]</span> </p><p class="q-cnt crt">{$question.question_name}</p>
+			<p></p>
+			<ol>
+				{foreach name="question.answers" item="ans" key="k"}
+				<li>
+                    <input id="{$key}_{$k}" type="radio" name="{$key}" value="{$ans.answer_code}"><label for="{$key}_{$k}">{$ans.answer_code}: {$ans.answer}</label>
+				</li>
+				{/foreach}
+			</ol>
+				{/eq}
+		  </div>
+		  {/foreach}
+        <h2>三、多选题（在下列各题的备选答案中选择两个或两个以上正确的。每题4分，20分）<span>(共计20分)</span></h2>
+        <div class="question-board" id="question-33202498">
+        <p class="q-cnt crt">1、<span>[4分]</span> </p><p class="q-cnt crt">党的纪律主要包括（      ）</p><p></p><ol><li>
+                <input id="33202498_1_0" type="checkbox" name="33202498_1" value="0"><label for="33202498_1_0">A. 政治纪律</label>
+            </li>
+
+            <li>
+                <input id="33202498_1_1" type="checkbox" name="33202498_1" value="1"><label for="33202498_1_1">B. 组织纪律</label>
+            </li>
+
+            <li>
+                <input id="33202498_1_2" type="checkbox" name="33202498_1" value="2"><label for="33202498_1_2">C. 经济工作纪律</label>
+            </li>
+
+            <li>
+                <input id="33202498_1_3" type="checkbox" name="33202498_1" value="3"><label for="33202498_1_3">D. 群众工作纪律</label>
+            </li></ol>
+          </div>
+
+        <h2>三、判断题（判断对错，正确的选“对”，错误的选“错”。每题2分，30分）<span>(共计30分)</span></h2>
+          <div class="question-board" id="question-33202505">
+            <p class="q-cnt crt">1、<span>[2分]</span> </p><p class="q-cnt crt">《入党志愿书》中没有填写内容的栏目  应注明“无”。</p><p></p><ol class="true-or-false"><li>
+                    <input id="33202505_1_0" type="radio" name="33202505_1" value="0"><label for="33202505_1_0">A. 对</label>
+                </li>
+
+                <li>
+                    <input id="33202505_1_1" type="radio" name="33202505_1" value="1"><label for="33202505_1_1">B. 错</label>
+                </li>
+            </ol>
+          </div>
+
+      </div>
+    </section>
+    <!-- 左边主内容end -->
+    <aside style="width:340px">
+      <div id="tips">
+        <div class="aside-block count-clock">
+          <div class="count-time">
+            <a href="javascript:;" class="close-count">关闭</a>
+            <div class="count">
+            
+              <em>01</em>
+              <em>30</em>
+              <em>00</em>
+            </div>
+          </div>
+          <div class="hide-time">
+            <a href="javascript:;" class="show-count">打开</a>
+          </div>
+        </div>
+        <div class="aside-block">
+          <div class="ctx-header">
+            <h2>题目大纲</h2>
+          </div>
+          <div class="list-thumbnail teacher">
+            <p class="q-name">一、单项选择题（在下列各题的备选答案中选择一个正确的。每题2 分，40分）</p>
+            <ul class="nail-list clearfix">
+              <a href="#question-33202491"><li id="33202491">1</li></a>
+            </ul>
+            <p class="q-name">二、多选题（在下列各题的备选答案中选择两个或两个以上正确的。每题4分，20分）</p>
+            <ul class="nail-list clearfix">
+              <a href="#question-33202498"><li id="33202498">1</li></a>
+            </ul>
+            <p class="q-name">三、判断题（判断对错，正确的选“对”，错误的选“错”。每题2分，30分）</p>
+            <ul class="nail-list clearfix">
+              <a href="#question-33202505"><li id="33202505">1</li></a>
+            </ul>
+          </div>
+          <div class="release-board">
+            <a id="submit_paper" href="javascript:;">提交试卷</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+<style type="text/css">
+*{font-family:microsoft yahei;}
+</style>
+<script type="text/x-css">
+footer center div[xclass="a1"]{
+  max-width:400px;
+  width:100%;
+  display:block;
+}
+footer center div[xclass="a1"] a{
+  width:24%;
+  min-width: 100px;
+  display: inline-block;
+  text-align:center;
+  border-left : 1px solid rgb(208,208,208);
+  margin: 10px 0;
+  margin-right: -1px;
+  font-size:12px;
+  float:left;
+  color:#212121;
+  text-decoration:none;
+  font-family:microsoft yahei;
+}
+footer center div[xclass="a1"] a:first-child{
+  border:0;
+}
+
+footer center div[xclass="a2"]{
+  max-width:1200px;
+  width:100%;
+  display:block;
+}
+footer center div[xclass="a2"] a{
+  width:13%;
+  min-width: 150px;
+  display: inline-block;
+  text-align:center;
+  margin: 10px 5px;
+  text-decoration:none;
+}
+footer center div[xclass="a2"] a img{
+  border:1px solid rgb(241,241,241);
+}
+footer center div[xclass="a2"] a:last-child{
+  border-right:0;
+}
+
+footer [xclass="bot"]{
+  background:rgb(242,242,242);
+  margin-top:10px;
+  text-align:center;
+}
+footer [xclass="bot"]>div{
+  width:100%;
+  max-width: 1280px;
+  position:relative;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+footer [xclass="bot"] div[xclass="lf"]{
+  font-size:12px;
+  text-align:left;
+  line-height:2;
+  float:left;
+}
+footer [xclass="bot"] div[xclass="rf"]{
+    text-align: left;
+    float: right;
+    padding-right: 20px;
+}
+</script>
+
+<script type="text/javascript">
+$('script[type="text/x-css"]').html().replace(/(.+?)\{\s*([\s\S]*?)\s*\}/g,function(aa,sel,css){
+  css.replace(/(.+?)\s*\:\s*(.+?)\s*\;\s*/g,function(aa,at,va){
+    $(sel).css(at,va);
+  });
+});
+$('div[xclass="a2"]>a>img').mouseover(function(){$(this).css('border-color','#00a5ed')}).mouseout(function(){$(this).css('border-color','rgb(241,241,241)')});
+if(!$.prototype.modal)$('footer').css({'min-width':'1220px','max-width':'100%'});
+</script>
+<script>
+  $(function(){
+    var gd = $('#group-data');
+    if(gd.length > 0){
+      visit(gd.attr('data-group-id'));
+    }
+  });
+</script>
+
+
+
+<script>
+document.oncontextmenu=new Function("event.returnValue=false"); 
+document.onselectstart=new Function("event.returnValue=false");
+var groupData = $('#group-data');
+var groupId = groupData.attr('data-group-id');
+var examId = groupData.attr('data-exam-id');
+var csrf = groupData.attr('data-csrf');
+var questionCount = parseInt(groupData.attr('data-questions'));
+var AnswerData = {};
+var saveStatus = true;
+var href = location.href.toString();
+
+function jumpId(id){
+  if(href.search(/\#question/)===-1){
+    location.href = href+'#question-'+id;
+  }else{
+    location.href = href.replace(/\#question-\d+/, '#question-'+id);
+  }
+};
+
+function _AnswerData(){
+  var x = [];
+  for(obj in AnswerData){
+    var m = {};
+    m[obj] = AnswerData[obj];
+    x.push(m);
+  }
+  return x;
+};
+
+// 取消答题事件绑定
+function removeEvent(ele){
+  if(ele){
+    ele.find('input[type="radio"],input[type="checkbox"]').attr('disabled', 'disabled');
+    ele.find('input[type=text]').attr('readonly', 'readonly');
+  }else{
+    $('.exam-detial-container').off('change','input[type="text"]');
+    $('.exam-detial-container').off('click','input[type="radio"],input[type="checkbox"]');
+  }
+};
+
+//单选题，多选题，判断题答案保存
+function choiceAnswerData(ele, submit){
+  var _self = ele;
+  var questionId = _self.attr('id').split('-')[1];
+  var qData = [];
+  // 保存答题记录到AnswerData中
+  _self.find('input').each(function(){
+    var _s = $(this);
+    if(_s.is(':checked') || _s.siblings().is(':checked')){
+      qData.push(_s.val());
+    }
+  });
+  // 默认单选，多选题目name唯一
+  var name = $(_self.find('input')[0]).attr('name').split('_')[1];
+  AnswerData[questionId] = {};
+  AnswerData[questionId][name] = qData;
+  console.log(JSON.stringify(AnswerData));
+};
+
+// 填空题答案保存
+function inputAnswerData(ele, submit){
+  var _self = ele;
+  var questionId = _self.attr('id').split('-')[1];
+  AnswerData[questionId] = {};
+
+  _self.find('input[type=text]').each(function(){
+    var _s = $(this);
+    var name = _s.attr('name').split('_')[1];
+    //if(_s.val()!==''){
+    if (AnswerData[questionId][name]===undefined) {
+      AnswerData[questionId][name] = [_s.val().trim()];
+    } else {
+      AnswerData[questionId][name].push(_s.val().trim());
+    }
+    //}
+  });
+};
+
+// 无回复提交
+function sA(){
+  var submitUrl = '/group/'+groupId+'/exam/'+examId+'/submit/simulate';
+  var postData = {
+    'csrfmiddlewaretoken': csrf,
+    'answers': JSON.stringify(_AnswerData()),
+    'completed': 1
+  };
+  $.ajax({
+    url: submitUrl,
+    type: 'POST',
+    data: postData
+  });
+};
+
+//提交试卷
+function submitAnswer(){
+  var submitUrl = '/group/'+groupId+'/exam/'+examId+'/submit/simulate';
+  var postData = {
+    'csrfmiddlewaretoken': csrf,
+    'answers': JSON.stringify(_AnswerData()),
+  };
+  console.log(JSON.stringify(_AnswerData()));
+  $.ajax({
+    url: submitUrl,
+    type: 'post',
+    data: postData,
+    success: function(x){
+      if(x.result){
+        return (new jDialog()).show({
+          title: '提示',
+          width: 650,
+          body: '<p style="text-align:center">您本次模拟考试获得的成绩是</p><p style="text-align:center;color:#fe8333;font-size:36px">'+x.score+'分</p>',
+          buttons:{ok: {text:"知道了",primary:!0,"default":!0}}
+        }, function(result){
+          location.href = '/group/'+groupId+'/exams';
+        })
+      }else{
+        xAlert('提示', x.message);
+      }
+    }
+  });
+};
+
+// 未保存弹窗
+function unSaveDialog(){
+  return new jDialog().show({
+    title: '提示',
+    width: 650,
+    body: '<p style="text-align:center">您尚未保存考试答题，请保存后再离开！</p>',
+    buttons: {ok: {text:"知道了",primary:!0,"default":!0}}
+  }, function(result){
+    if(result==='ok'){
+      this.close();
+    }
+  });
+};
+
+// 未完成弹窗
+function unCompleted(number){
+  return new jDialog().show({
+    title: '提示',
+    width: 650,
+    body: '<p style="text-align:center">您还有<x style="color:#fe8333">'+number+'</x>未提交</p>'+
+          '<p style="text-align:center">考试答题提交后将无法修改，是否确认提交？</p>',
+    buttons: jDialog.BUTTON_OK_CANCEL
+  }, function(result){
+    if(result==='ok'){
+      submitAnswer();
+    }else{
+      this.close();
+      jumpId($($('.list-thumbnail').find('li[class=""]')[0]).attr('id'));
+    }
+  });
+};
+
+// 稍后公布成绩弹窗
+function laterDialog(d){
+  return new jDialog().show({
+    title: '提示',
+    width: 650,
+    body: '<p style="text-align:center">您的答题已全部提交，将于<x style="color:#fe8333">'+d+'</x>公布成绩，敬请关注！</p>',
+    buttons: {ok: {text:"知道了",primary:!0,"default":!0}}
+  }, function(result){
+    location.href = '/group/'+groupId+'/exams';
+  });
+};
+
+// 显示成绩弹窗
+function showSDialog(s){
+  return new jDialog().show({
+    title: '提示',
+    width: 650,
+    body: '<p style="text-align:center">您本次考试获得的成绩是</p><p style="text-align:center;color:#fe8333;font-size:36px">'+s+'分</p>',
+    buttons: {ok: {text:"查看明细",primary:!0,"default":!0}, cancel: {text:"返回考试",primary:!0,"default":!0}}
+  }, function(result){
+    if(result==='ok'){
+      location.reload();
+    }else{
+      location.href = '/group/'+groupId+'/exams';
+    }
+  });
+};
+
+// 自动提交
+function autoSubmitDialog(){
+  sA();
+  return new jDialog().show({
+    title: '提醒',
+    width: 650,
+    body: '<p style="text-align:center">很抱歉，考试时间已经结束，系统已经自动帮你提交了考卷。</p>',
+    buttons: {ok: {text:"知道了",primary:!0,"default":!0}}
+  }, function(result){
+    submitAnswer();
+  })
+}
+
+// 学生考试页交互
+$(function(){
+  // radio和checkbox选中后题目大纲样式改变
+  $('.exam-detial-container').on('click','input[type="radio"],input[type="checkbox"]',function(){
+    var _self = $(this);
+    var input_name = _self.attr('name').replace(/\_[0-9]+/, '');
+
+    if (_self.is(':checked') || _self.closest('ol').find('label').is(':checked + label')) {
+      $('#' + input_name).addClass('done');
+      _self.closest('div.question-board').find('.sub-ans').text('提交').addClass('clickable');
+    } else {
+      $('#' + input_name).removeClass('done');
+      _self.closest('div.question-board').find('.sub-ans').text('提交').removeClass('clickable');
+    }
+    choiceAnswerData(_self.closest('div.question-board'), false);
+  });
+
+  // input.text填写后题目大纲样式改变
+  $('.exam-detial-container').on('change','input[type="text"]',function(){
+    var _self = $(this);
+    var input_name = _self.attr('name').replace(/\_[0-9]+/, '');;
+    var input_l = _self.val().trim();
+    var bro_input_l = _self.siblings('input').val();
+    if ((input_l && input_l.length > 0) || (bro_input_l && bro_input_l.length > 0)) {
+      $('#' + input_name).addClass('done');
+      _self.closest('div.question-board').find('.sub-ans').text('提交').addClass('clickable');
+    } else {
+      $('#' + input_name).removeClass('done');
+      _self.closest('div.question-board').find('.sub-ans').text('提交').removeClass('clickable');
+    }
+    inputAnswerData(_self.closest('div.question-board'), false);
+  });
+
+  //单题提交按钮交互
+  $('.exam-detial-container').on('click','.sub-ans',function(){
+    var _self = $(this);
+    if(_self.html()=='提交'&&_self.hasClass('clickable')){
+      var isClickable = _self.attr('class').indexOf('clickable');
+      r = inputAnswerData(_self.closest('div.question-board'), true);
+      if (r || isClickable > 0) {
+        _self.text('已提交').removeClass('clickable');
+      }else{
+        _self.text('提交').addClass('clickable');
+      }
+    }
+  });
+
+  // 试卷提交
+  $('#submit_paper').on('click',function(){
+    var _self = $(this);
+    var d = _AnswerData();
+    if (d.length<questionCount){
+      return unCompleted(questionCount-d.length);
+    }
+    return new jDialog().show({
+      title: '提示',
+      width: 650,
+      body: '<p style="text-align:center">考试答题提交后将无法修改，是否确认提交？</p>',
+      buttons: jDialog.BUTTON_OK_CANCEL
+    },function(result){
+      var _s = this;
+      if(result==='ok'){
+        submitAnswer();
+      }else{
+        _s.close();
+      }
+    });
+  });
+
+  // 显示关闭倒计时
+  $('.close-count,.show-count').on('click',function(){
+    var  _aim = $('.hide-time'),
+      isShow = _aim.css('display');
+    if(isShow === 'none') {
+      _aim.show();
+    } else {
+      _aim.hide();
+    }
+  });
+
+  var tips = $('#tips');
+  var div_top = tips.offset().top;
+  var wrapper = $('.wrapper');
+  var wrapper_top = wrapper.offset().top;
+  var height = {
+    aside_height: tips[0].offsetHeight, //浮动栏高度
+    wrapper_height: wrapper[0].offsetHeight //浮动栏父级section高度
+  };
+
+  var wrapper_top_h = wrapper_top + height.wrapper_height;
+
+  $(window).scroll(function() {
+    if($(this).scrollTop() - div_top > 0 && wrapper_top_h - $(this).scrollTop() > height.aside_height){
+      tips.removeAttr('style');
+      tips.css({
+        position:'fixed',
+        top:0,
+        width:'340px'
+      });
+    } else if (wrapper_top_h - $(this).scrollTop() < height.aside_height) {
+      wrapper.css('position','relative');
+      tips.removeAttr('style');
+      tips.css({
+        position:'absolute',
+        right:0,
+        bottom:'40px',
+        width:'340px'
+      });
+    }else {
+      tips.removeAttr('style');
+    }
+  });
+
+  //倒计时
+  (function () {
+    var _self = $('.count em'),
+        l = _self.length;
+
+    var timeArr = $.map(_self,function (n) {//获取每个em的内容并返回新数组
+      return $(n).text();
+    });
+
+    var count_down = setInterval(function(){
+      if (timeArr[l - 1] + timeArr[l - 2] + timeArr[l - 3] == 0){
+        clearInterval(count_down); //清除interval
+        autoSubmitDialog();
+      }
+
+      if(timeArr[l - 1] > 0){ //秒计时
+        timeArr[l - 1]--;
+        if (timeArr[l - 1] < 10) {
+          timeArr[l - 1] = '0' + timeArr[l - 1];
+        }
+        $(_self[l-1]).text(timeArr[l - 1]);
+      }
+      if(timeArr[l-1] == 0 && timeArr[l-2] > 0){ //分计时
+        timeArr[l - 1] = 59;
+        timeArr[l - 2] --;
+        if (timeArr[l - 2] < 10) {
+          timeArr[l - 2] = '0' + timeArr[l - 2];
+        }
+        $(_self[l-2]).text(timeArr[l - 2]);
+      }
+      if(timeArr[l-2] == 0 && timeArr[l-3] > 0){ //时计时
+        timeArr[l - 2] = 59;
+        timeArr[l - 3] --;
+        if (timeArr[l - 3] < 10) {
+          timeArr[l - 3] = '0' + timeArr[l - 3];
+        }
+        $(_self[l-3]).text(timeArr[l - 3]);
+      }
+    },1000);
+  })();
+});
+</script>
+
+
+
+
+</body></html>
+
+
+

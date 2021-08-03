@@ -1,0 +1,38 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <input name="row[subject_id]" value="{$row.subject_id}" type="hidden">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('章节名称')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-unit_name" data-rule="required" class="form-control" name="row[unit_name]" type="text" value="{$row.unit_name}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('上级章节')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select id="c-pid" data-rule="required" class="form-control selectpicker" name="row[pid]">
+                <option value="0">顶级章节</option>
+                {foreach name="parentList" item="vo"}
+                <option value="{$key}" {in name="key" value="$row['pid']"}selected{/in} {in name="key" value="$row['id']"}disabled{/in}>{$vo.unit_name}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('排序')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sort" data-rule="required" class="form-control" name="row[sort]" type="number" value="{$row.sort}">
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

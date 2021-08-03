@@ -1,0 +1,97 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('选择科目')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-subject_id" data-rule="required" disabled  class="form-control selectpicker" name="row[subject_id]">
+                {foreach name="subjectList" item="vo"}
+                <option value="{$vo['id']}"  {in name="$vo['id']" value="$row['subject_id']"}selected='selected'{/in}>{$vo['subject_name']}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('考试类型')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-type" data-rule="required" disabled class="form-control selectpicker">
+                <option value="1" {if condition="$row['type'] eq 1"}selected="true"{/if}>正式考试</option>
+                <option value="2" {if condition="$row['type'] eq 2"}selected="true"{/if}>模拟考试</option>
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('考试名称')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-exam_name" data-rule="required" class="form-control" name="row[exam_name]" type="text" value="{$row.exam_name}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('时长（分钟）')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-givetime" data-rule="required" class="form-control " name="row[givetime]" type="number" value="{$row.givetime}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('单个题目分数')}:</label>
+
+        <div class="col-xs-6 col-sm-9">
+            <div class="form-group" >
+                <label class="control-label col-xs-12 col-sm-2">{:__('单选')}:</label>
+
+                <div class="col-xs-6 col-sm-4">
+                    <input id="c-score_1" data-rule="required" class="form-control" name="row[score][1]" type="number" value="{$configs[0]['score']?$configs[0]['score']:''}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('多选')}:</label>
+
+                <div class="col-xs-6 col-sm-4">
+                    <input id="c-score_2" data-rule="required" class="form-control" name="row[score][2]" type="number" value="{$configs[1]['score']?$configs[1]['score']:''}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-2">{:__('判断')}:</label>
+
+                <div class="col-xs-6 col-sm-4">
+                    <input id="c-score_3" data-rule="required" class="form-control" name="row[score][3]" type="number" value="{$configs[2]['score']?$configs[2]['score']:''}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group form-time">
+        <label class="control-label col-xs-12 col-sm-2">{:__('开始时间')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-start_date" data-rule="required" class="form-control datetimepicker"  value="{$row.start_date}" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_date]" type="text">
+        </div>
+    </div>
+
+    <div class="form-group form-time">
+        <label class="control-label col-xs-12 col-sm-2">{:__('结束时间')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_date" data-rule="required" class="form-control datetimepicker"  value="{$row.end_date}" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_date]" type="text">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('排序')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sort" data-rule="required" class="form-control" name="row[sort]" type="number" value="{$row.sort}">
+        </div>
+    </div>
+
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

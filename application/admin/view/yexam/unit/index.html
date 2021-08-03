@@ -1,0 +1,91 @@
+
+
+
+<div class="content">
+    <style>
+        .form-commonsearch .form-group {
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        form.form-commonsearch .control-label {
+            padding-right: 0;
+        }
+
+        .tdtitle {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        #channeltree {
+            margin-left: -6px;
+        }
+
+        #channelbar .panel-heading {
+            height: 55px;
+            line-height: 25px;
+            font-size:14px;
+        }
+
+        @media (max-width: 1230px) {
+
+            .fixed-table-toolbar .search .form-control {
+                display: none;
+            }
+        }
+
+        @media (min-width: 1200px) {
+
+            #channelbar {
+                /*width: 25%;*/
+            }
+
+            #archivespanel {
+                /*width: 75%;*/
+            }
+        }
+
+    </style>
+    <div class="row">
+        <div class=" col-md-2 hidden-xs hidden-sm" id="channelbar" style="padding-right:0;">
+            <div class="panel panel-default panel-intro">
+                <div class="panel-heading">
+                    <div class="panel-lead">
+                        <em>科目列表</em>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <span class="text-muted"><label><small>科目列表（操作章节前请先选择科目）</small></label></span>
+                    <div id="channeltree" style="height:475px;overflow-y:auto "></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-10" id="archivespanel">
+            <div class="panel panel-default panel-intro" style="background: #f1f4f6;padding-top: 0;padding-bottom: 0;box-shadow: none;">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs" data-field="status">
+                        <li class="active"><a href="javascript:;" class="tab_btn">章节列表</a></li>
+                    </ul>
+                </div>
+                <div id="myTabContent" class="tab-content" style="background:#fff;padding:15px;">
+                    <div class="tab-pane fade active in" id="one">
+                        <div class="widget-body no-padding">
+                            <div id="toolbar" class="toolbar">
+                                <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                                <a href="javascript:;" class="btn btn-success btn-disabled disabled btn-unit-add {:$auth->check('yexam/unit/add')?'':'hide'}"  title="{:__('添加章节')}" ><i class="fa fa-plus"></i> {:__('添加章节')}</a>
+                            </div>
+                            <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                                   data-operate-edit="{:$auth->check('yexam/unit/edit')}"
+                                   data-operate-del="{:$auth->check('yexam/unit/del')}"
+                                   width="100%">
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

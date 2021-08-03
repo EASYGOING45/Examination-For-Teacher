@@ -1,0 +1,138 @@
+.navs { margin-bottom: 15px; }
+.navs a { color: #246da3; }
+.navs a,
+.navs span {margin: 0 5px;}
+.navs .now-page { color: #aaa; cursor: text; }
+
+.ctx-container .create { height: auto; padding: 30px 0; text-align: center; border: none; }
+.ctx-container .ctx-header .h1-container{margin-right:15px;}
+.ctx-container .create .h1-container h1 {font-size: 24px;margin-bottom: 20px;word-wrap: break-word;word-break: break-all;}
+.ctx-container .create .h1-container p { display: inline-block; line-height: .8; padding: 0 15px; }
+.ctx-container .create .h1-container p + p { border-left: 1px solid #d9d9d9; }
+
+.exam-board { width: 840px; padding: 15px 0; margin: 0 auto; border-top: 1px dashed #e5e5e5; border-bottom: 1px dashed #e5e5e5; }
+
+.board-item { float: left; background-color: #f1f4ff; margin-bottom: 1px; font-size: 14px; box-sizing: border-box; }
+.board-item p { display: inline-block; width: 24%; text-align: center; margin-top: 13px; }
+.board-item p + p { border-left: 1px solid #d9d9d9; }
+
+div.board-item { width: 100%; height: 49px; }
+p.board-item { height: 39px; line-height: 39px; }
+p.board-item:nth-of-type(2n+1) { width: 90px; margin-right: 1px; text-align: center; background-color: #edf0f9; }
+p.board-item:nth-of-type(2n) { width: 328.5px; padding-left: 10px; color: #666; }
+p.border-right{margin-left: 1px;}
+
+.upload-board { font-size: 14px; text-align: center; padding-bottom: 50px; }
+.upload-board .file-container { background: url("/static/themes/yiban/groups/img/p-inject.b7e831abba66.png") no-repeat 0 0; position: relative; width: 155px; height: 155px; margin: 100px auto 60px; overflow: hidden; }
+.upload-board .file-container:hover { background-position: 0 -155px; }
+.upload-board .file-container input[type="file"] { position: absolute; top: 0; right: 0; width: 500px; height: 500px; opacity: 0; cursor: pointer; }
+.upload-board p, .upload-board a { line-height: 2.5; }
+.upload-board a { color: #fe8333; padding:0 20px;}
+.input-info{
+  width: 840px;
+  padding: 15px 0;
+  margin: 0 auto;
+  border-top: 1px dashed #e5e5e5;
+  line-height: 25px;
+}
+.input-info h1{
+  font-size: 18px;
+  padding: 5px 0px;
+}
+.input-info p.title{
+  font-size: 16px;
+  padding: 5px 0px ;
+  font-weight: bolder;
+}
+.input-info p.q{
+  font-size: 14px;
+}
+.input-info div.content{
+  background: #f9f9f9;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.input-info div.content p{
+  /*padding: 5px 10px;*/
+}
+.input-info .calc{
+  display: inline-block;
+  line-height: 1;
+  padding: 3px;
+  margin: 15px 0;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+}
+.input-info .calc .lb {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    background: url("/static/themes/yiban/groups/img/light-bulb.cd7d59b6dbdb.png") no-repeat;
+}
+.input-info table{
+  background-color: #f9f9f9;
+  font-size: 14px;
+  width: 827px;
+  text-align: center;
+  margin: 15px auto;
+}
+.input-info table tbody td{
+  border: 1px solid #ffffff;
+  height: 30px;
+  font-family: 'microsoft yahei';
+  width: 30%;
+}
+.question-board-cls {
+  background-color: #fee;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.question-board-cls .the-ans{
+  box-sizing: border-box;
+  padding: 5px 0px 2px 35px;
+}
+.question-board-cls .fls .ans{
+  color: #e04141;
+  padding: 0 10px;
+  border-bottom: 1px solid #aaa;
+}
+.question-board-cls .the-ans:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 -22px -35px;
+  background: url("/static/themes/yiban/groups/img/radio-icon.ae4850bf28f7.png") no-repeat;
+  background-position: -34px -23px;
+}
+
+.question-board-rih {
+  background-color: #f1f8f5;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.question-board-rih .the-ans{
+  box-sizing: border-box;
+  padding: 5px 0px 2px 35px;
+}
+.question-board-rih .fls .ans{
+  color: #3cb155;
+  padding: 0 10px;
+  border-bottom: 1px solid #aaa;
+}
+.question-board-rih .the-ans:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 -22px -35px;
+  background: url("/static/themes/yiban/groups/img/radio-icon.ae4850bf28f7.png") no-repeat;
+  background-position: -34px -3px;
+}
+/*# sourceMappingURL=create-exam-paper.css.map */

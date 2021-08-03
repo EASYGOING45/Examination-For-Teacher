@@ -1,0 +1,371 @@
+.ctx-container,aside {
+    display:inline-block;
+    vertical-align:top;
+    box-sizing:border-box;
+    min-height:550px
+}
+.ctx-container {
+    border:1px solid #ededed;
+    background-color:#fff
+}
+aside {
+    width:324px;
+    background-color:transparent
+}
+aside .topic-info {
+    width: 300px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #fff;
+    position:relative;
+}
+aside .topic-info .title {
+    font-size: 26px;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+aside .topic-info .time {
+    margin-right:10px
+}
+aside .topic-info .time,aside .topic-info .mge {
+    display:inline-block;
+    vertical-align:middle;
+    font-size:14px;
+    color:#626262
+}
+aside .topic-info a {
+    display:block;
+    width:128px;
+    margin:15px auto 0;
+    color:#616161;
+    line-height:28px;
+    background-color:#f5f5f5;
+    border:1px solid #e8e8e8;
+    border-radius:1px
+}
+aside .topic-info a:hover {
+    background-color:#E1E1E1
+}
+aside .aside-banner {
+    width:340px;
+    border-radius:3px;
+    padding-bottom:12px;
+}
+
+aside .topic-info span.icon{
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    z-index: 1001;
+    display: block;
+    top: 0px;
+    left: 37px;
+}
+aside .topic-info span.icon-private{
+    background: url("/static/themes/yiban/groups/img/g_priv.c18c502d95b2.png");
+}
+aside .topic-info span.icon-administrative{
+    background: url("/static/themes/yiban/groups/img/g_adm.01ae9f52ad25.png");
+}
+aside .topic-info span.icon-private.icon-administrative{
+    background: url("/static/themes/yiban/groups/img/g_priv_adm.cfd99ac39ad7.png");
+}
+aside .ctx-header{
+    padding:10px 0;
+}
+aside .ctx-footer{
+    padding:15px 0;
+}
+aside .ctx-header{
+    border-bottom: 1px solid #ededed;
+}
+aside .ctx-footer{
+    border-top: 1px solid #ededed;
+}
+aside .ctx-header h2{
+    font-size: 18px;
+    color: #212121;
+    font-weight: normal;
+    margin-left: 15px;
+}
+aside .ctx-header h2 ~ p {
+  color: #aaa;
+  margin-left: 15px;
+}
+aside .aside-block{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+aside .ctx-footer a{
+    display: block;
+    width: 128px;
+    margin: 0 auto;
+    color: #616161;
+    text-align: center;
+    line-height: 28px;
+    background-color: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    border-radius: 1px;
+}
+.nav {
+  margin-bottom: 20px;
+}
+.nav a, .nav span {
+  margin: 0 5px;
+}
+.nav a {
+  color: #246da3;
+}
+.nav span {
+  color: #aaa;
+}
+
+/*考试明细页新增样式*/
+/*题目大纲*/
+.list-thumbnail {
+  width: 310px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.list-thumbnail .q-name {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.list-thumbnail .nail-list li {
+  float: left;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #bbbfca;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 30px;
+  text-align: center;
+  margin: -1px 0 0 -1px;
+  background-color: #d4d9df;
+  color: #fff;
+}
+.list-thumbnail .nail-list li:hover{
+  background-color:#fe8333;
+  color:#fff;
+}
+.list-thumbnail .nail-list .err {
+  background-color: #fee;
+  color: #dd3131;
+}
+
+.your-grade {
+  background: url("/static/themes/yiban/groups/img/grade-bg.a914b3086732.png") no-repeat;
+  width: 340px;
+  height: 150px;
+}
+.your-grade p {
+  font-size: 54px;
+  line-height: 155px;
+  color: #fff;
+  text-align: right;
+  margin-right: 80px;
+}
+
+aside ul.place-list {
+  width: 310px;
+  margin: 10px auto 0;
+}
+aside ul.place-list li {
+  margin-left: 5px;
+}
+aside ul.place-list li + li {
+  border: none;
+}
+aside ul.place-list li > div {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+aside ul.place-list li > div:nth-child(1) {
+  position: relative;
+}
+aside ul.place-list li > div:nth-child(1) span {
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 23px;
+  left: -5px;
+  top: -5px;
+  background: url("/static/themes/yiban/groups/img/crowns.d0fed994a666.png") no-repeat;
+}
+aside ul.place-list li > div:nth-child(1) div {
+  width: 70px;
+  height: 70px;
+  margin-right: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+aside ul.place-list li > div:nth-child(2) {
+  width: 115px;
+}
+aside ul.place-list li > div:nth-child(2) p {
+  line-height: 2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+aside ul.place-list li > div:nth-child(3) {
+  width: 75px;
+  text-align: right;
+}
+aside ul.place-list li > div:nth-child(3) p {
+  font-size: 32px;
+}
+aside ul.place-list li > div:nth-child(3) p span {
+  font-size: 12px;
+}
+aside ul.place-list li.place-fir div:nth-child(1) span {
+  background-position: 0 0;
+}
+aside ul.place-list li.place-fir div:nth-child(1) div {
+  border: 3px solid #ee745f;
+}
+aside ul.place-list li.place-fir div:nth-child(2) p:nth-child(1) {
+  color: #ee745f;
+}
+aside ul.place-list li.place-fir div:nth-child(3) p, aside ul.place-list li.place-fir div:nth-child(3) span {
+  color: #ee745f;
+}
+aside ul.place-list li.place-sed div:nth-child(1) span {
+  background-position: -25px 0;
+}
+aside ul.place-list li.place-sed div:nth-child(1) div {
+  border: 3px solid #ffc468;
+}
+aside ul.place-list li.place-sed div:nth-child(2) p:nth-child(1) {
+  color: #ffc468;
+}
+aside ul.place-list li.place-sed div:nth-child(3) p, aside ul.place-list li.place-sed div:nth-child(3) span {
+  color: #ffc468;
+}
+aside ul.place-list li.place-thd div:nth-child(1) span {
+  background-position: -50px 0;
+}
+aside ul.place-list li.place-thd div:nth-child(1) div {
+  border: 3px solid #48cfae;
+}
+aside ul.place-list li.place-thd div:nth-child(2) p:nth-child(1) {
+  color: #48cfae;
+}
+aside ul.place-list li.place-thd div:nth-child(3) p, aside ul.place-list li.place-thd div:nth-child(3) span {
+  color: #48cfae;
+}
+
+.list-thumbnail.teacher .nail-list li {
+  background-color: #fff;
+  color: #212121;
+}
+.list-thumbnail.teacher .nail-list li:hover{
+  background-color:#fe8333;
+  color:#fff;
+}
+
+.release-board {
+  border-top: 1px solid #ededed;
+  text-align: center;
+  padding: 15px 0;
+}
+.release-board a {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+  background-color: #fe8333;
+  border-radius: 3px;
+}
+.release-board a + a {
+  margin-left: 20px;
+}
+
+/*考试页倒计时样式*/
+.count-clock {
+  position: relative;
+  height: 150px;
+}
+.count-clock .count-time, .count-clock .hide-time {
+  position: absolute;
+  width: 340px;
+  height: 150px;
+  text-align: center;
+}
+.count-clock .count-time a, .count-clock .hide-time a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: 30px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 3px 5px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.count-clock .hide-time {
+  display: none;
+  background: url("/static/themes/yiban/groups/img/count-time-co.24b341dbe778.png") no-repeat;
+}
+.count-clock .count-time {
+  background: url("/static/themes/yiban/groups/img/count-time-bg.b2d0272ce4d3.png") no-repeat;
+}
+.count-clock .count {
+  /*margin-top: 54px;*/
+}
+.count-clock .count em {
+  margin-left: 7px;
+  font-size: 52px;
+  line-height: 155px;
+  letter-spacing: 11px;
+}
+.count-clock .count em + em {
+  margin-left: 29px;
+}
+aside .aside-block ul li {
+  padding: 10px 0;
+}
+aside .aside-block ul li a {
+  color: #246da3;
+  line-height: 1.8em;
+}
+aside .aside-block ul li span {
+  color: #666;
+}
+
+.icon-success{
+  background-image: url("/static/themes/yiban/groups/img/box-success.1c8ed5700b8e.png");
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.icon-error{
+  background-image: url("/static/themes/yiban/groups/img/box-fail.f2881b87a109.png");
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}
+
+.icon-p{
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+  position: relative;
+  top: -48px;
+}
+.navs { margin-bottom: 15px; }
+.navs a { color: #246da3; }
+.navs a,
+.navs span {margin: 0 5px;}
+.navs .now-page { color: #aaa; cursor: text; }

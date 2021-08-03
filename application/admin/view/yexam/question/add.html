@@ -1,0 +1,79 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <input name="row[subject_id]" type="hidden" value="{$unit['subject_id']}">
+    <input name="row[unit_id]" type="hidden" value="{$unit['id']}">
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('题目名称')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-question_name" data-rule="required" class="form-control" name="row[question_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('题目类型')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-type" data-rule="required" class="form-control " name="row[type]">
+                {foreach name="typeList" item="vo"}
+                    <option value="{$key}" {in name="key" value=""}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group panduan"  style="display: none;">
+        <label class="control-label col-xs-12 col-sm-2">{:__('正确答案')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[right_answer_panduan]', ['1'=>__('对'), '0'=>__('错')])}
+        </div>
+    </div>
+    <div class="form-group danxuan">
+        <label class="control-label col-xs-12 col-sm-2">{:__('正确答案')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[right_answer_danxuan]', ['A'=>__('A'), 'B'=>__('B'), 'C'=>__('C'), 'D'=>__('D')])}
+        </div>
+    </div>
+    <div class="form-group duoxuan" style="display: none">
+        <label class="control-label col-xs-12 col-sm-2">{:__('正确答案')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_checkboxs('right_answer_duoxuan[]', ['A'=>__('A'), 'B'=>__('B'), 'C'=>__('C'), 'D'=>__('D')])}
+        </div>
+    </div>
+    <div class="form-group xuanze">
+        <label class="control-label col-xs-12 col-sm-2">A:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-right_answer_A" class="form-control" name="row[answer][A]" type="text">
+        </div>
+    </div>
+
+    <div class="form-group xuanze">
+        <label class="control-label col-xs-12 col-sm-2">B:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-right_answer_B" class="form-control" name="row[answer][B]" type="text">
+        </div>
+    </div>
+    <div class="form-group xuanze">
+        <label class="control-label col-xs-12 col-sm-2">C:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-right_answer_C" class="form-control" name="row[answer][C]" type="text">
+        </div>
+    </div>
+    <div class="form-group xuanze">
+        <label class="control-label col-xs-12 col-sm-2">D:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-right_answer_D" class="form-control" name="row[answer][D]" type="text">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('解析')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-area" class="form-control" name="row[area]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

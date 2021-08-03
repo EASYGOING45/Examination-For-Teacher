@@ -1,0 +1,88 @@
+footer {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+footer .copyright-wrap {
+  padding: 20px 0;
+  background-color: #f2f2f2;
+  min-width: 1240px;
+}
+footer .brands-links, footer .copyright {
+  width: 1220px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+footer .brands-links {
+  padding: 35px 0;
+}
+footer .brands, footer .links {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .brands {
+  margin-right: 100px;
+  text-align: center;
+}
+footer .brands .slogan {
+  margin-bottom: 22px;
+}
+footer .brands a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  background: url("/static/themes/yiban/img/brands.37d1f1d23aa4.jpg") no-repeat;
+}
+footer .brands .yb {
+  width: 73px;
+  height: 31px;
+}
+footer .brands .xy {
+  width: 106px;
+  height: 30px;
+  background-position: 0 -31px;
+}
+footer .brands .dx {
+  width: 100px;
+  height: 28px;
+  background-position: 0 -61px;
+}
+footer .brands .zz {
+  width: 114px;
+  height: 30px;
+  background-position: 0 -89px;
+}
+footer .brands .by {
+  width: 111px;
+  height: 37px;
+  background-position: 0 -118px;
+}
+footer .links h2, footer .links div {
+  display: inline-block;
+  vertical-align: top;
+}
+footer .links h2 {
+  font-size: 16px;
+}
+footer .links h2 + div {
+  margin-left: 15px;
+}
+footer .links div + h2 {
+  margin-left: 70px;
+}
+footer .links div p a {
+  color: #000;
+}
+footer .copyright .cr-w, footer .copyright .supports {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .copyright .cr-w a, footer .copyright .cr-w p {
+  color: #5d5d5d;
+}
+footer .copyright .supports {
+  float: right;
+}
+footer .copyright .cr {
+  margin-bottom: 10px;
+}

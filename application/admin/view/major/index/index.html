@@ -1,0 +1,56 @@
+<section class="invoice">
+    <!-- title row -->
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="page-header">
+                <input type="text" value="{$basicInfo.GH}" class="hidden" id="GH">
+                <input type="text" value="false" class="hidden" id="check">
+                <input type="text" value="{$basicInfo.XM}" class="hidden" id="XM">
+                <input type="text" value="{$basicInfo.YXJC}" class="hidden" id="YXJC">
+                <input type="text" value="{$basicInfo.type}" class="hidden" id="type">
+                2020年长安大学辅导员素质能力考核-报名
+            <small class="pull-right">日期：{$basicInfo.time}</small>
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p class="lead">个人信息</p>
+            <div class="table-responsive">
+            <table class="table" >
+                <tbody><tr>
+                <th style="width:50%;text-align: center">姓名：</th>
+                <td style="text-align: center">{$basicInfo.XM}</td>
+                </tr>
+                <tr>
+                <th style="text-align: center">工号：</th>
+                <td style="text-align: center"> {$basicInfo.GH}</td>
+                </tr>
+                <tr>
+                <th style="text-align: center">学院：</th>
+                <td style="text-align: center">{$basicInfo.YXJC}</td>
+                </tr>
+            </tbody></table>
+            </div>
+        </div>          
+    </div>
+    <div class="row">
+        <div class="form-group col-xs-12">
+            <label class="control-label col-xs-6" style="text-align: center;" >请选择考场：</label>
+                <!-- <label class="radio-inline col-xs-1">
+                    <input type="radio" name="place" value="BB">本部
+                </label> -->
+                <label class="radio-inline col-xs-1">
+                    <input type="radio" name="place" value="WS" checked="checked">渭水
+                </label>
+        </div>  
+    </div>
+    <p class="text-muted well well-sm no-shadow" style="margin-top: 10px;">
+        注：若所示信息有误，请联系系统管理员，电话：15029484116。
+    </p>
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-success btn-sign pull-right"><i class="fa fa-hand-paper-o"></i> 信息确认无误，报名</button>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,179 @@
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  min-width: 1220px;
+}
+header .head-main {
+  width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+}
+header .brand, header .links, header .sign-log, header .input-con, header .img-con, header .signed, header .signed p {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .links a, header .sign-log a {
+  font-size: 16px;
+  color: #212121;
+  line-height: 70px;
+}
+header .brand {
+  width: 280px;
+  height: 50px;
+  margin: 9px 0 0 7px;
+  background: url("/static/themes/yiban/img/yb-brand-color.34727e0b1c0c.png") no-repeat;
+}
+header .links {
+  margin-right: 110px;
+}
+header .links a {
+  margin: 0 16px;
+}
+header .sign-log .input-con {
+  position: relative;
+  width: 190px;
+  margin-right: 25px;
+  margin-top: -1px;
+}
+header .sign-log .input-con span {
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 18px;
+  height: 18px;
+  background: url("/static/themes/yiban/img/search-black.b1ba8ec3e5ed.png") no-repeat;
+  cursor: pointer;
+}
+header .sign-log .input-con input {
+  width: 0;
+  color: #212121;
+  background: transparent;
+}
+header .sign-log .input-con input:focus {
+  border-color: #212121;
+  width: 190px;
+  padding: 0 5px;
+  outline: none;
+}
+header .sign-log input, header .sign-log a {
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+header .sign-log > a {
+  display: inline-block;
+  width: 55px;
+  margin: 0 5px;
+  line-height: 30px;
+  text-align: center;
+}
+header .sign-log > a:hover {
+  border-color: #909090;
+}
+header .signed {
+  position: relative;
+  height: 70px;
+}
+header .signed:hover .user-board {
+  top: 75px;
+  opacity: 1;
+  visibility: visible;
+}
+header .signed .img-con {
+  width: 35px;
+  height: 35px;
+  margin-top: 16px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+header .signed .img-con img {
+  width: 35px;
+  height: 35px;
+}
+header .signed p {
+  margin-left: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #212121;
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+header .user-board {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+header .user-board li + li {
+  border-top: 1px solid #f6f6f6;
+}
+header .user-board li a {
+  display: block;
+  width: 140px;
+  height: 45px;
+  font-size: 12px;
+  line-height: 45px;
+  text-align: center;
+  color: #666;
+  border: none;
+}
+header .user-board li a:hover {
+  background-color: #eaeaea;
+}
+header .user-board span {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("/static/themes/yiban/img/spring1.35e697feeec8.png") no-repeat;
+}
+header .user-board .trigle {
+  position: absolute;
+  top: -9px;
+  left: 60px;
+  width: 18px;
+  height: 10px;
+}
+header .user-board .sign-out span {
+  width: 13px;
+  height: 15px;
+  margin-right: 5px;
+  background-position: -3px -12px;
+}
+input#search1::-ms-clear{display:none;}
+.dialog-main ol.team-dialog{
+    margin: 10px auto;
+}
+
+.dialog-main ol.team-dialog li{
+    width: 98%;
+    display: inline-block;
+    margin: 5px 5px 5px 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.dialog-main ol.team-dialog li input{
+  margin-right: 5px;
+}
+ol.team-dialog{
+  max-height: 400px;
+  overflow: auto;
+}

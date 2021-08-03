@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* 查看课群成员样式 */
+body {
+  background-color: #f8f8f8;
+}
+
+.wrapper {
+  width: 1220px;
+  margin: 20px auto;
+  padding-bottom: 50px;
+}
+
+.ctx-container {
+  width: 870px;
+  margin-right: 6px;
+}
+.ctx-container .ctx-header {
+  height: 50px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ededed;
+}
+.ctx-container .ctx-header .h1-container {
+  margin-left: 15px;
+}
+.ctx-container .ctx-header .h1-container h1 {
+  font-size: 18px;
+  color: #212121;
+  margin-bottom: 7px;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+.ctx-container .ctx-header .h1-container p {
+  font-size: 14px;
+  color: #aaa;
+}
+.ctx-container .list-container h2 {
+    font-size: 16px;
+    margin: 15px 35px;
+    font-weight: normal;
+    border-left: 5px solid #fe8333;
+    padding-left: 7px;
+    line-height: 1.3em;
+}
+.ctx-container .list-container ul {
+  width: 850px;
+  margin: 0 auto;
+}
+.ctx-container .list-container ul li {
+  float: left;
+  width: 120px;
+  margin: 0 25px 40px;
+}
+.ctx-container .list-container ul li img {
+  width: 120px;
+  height: 120px;
+}
+.ctx-container .list-container ul li .name {
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #212121;
+}
+.ctx-container .list-container ul li .time {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 5px;
+}
+.ctx-container .list-container ul li .dect {
+  display: block;
+  width: 120px;
+  height: 25px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #f8dcc3;
+  background-color: #fae9da;
+  text-align: center;
+  line-height: 23px;
+  color: #c6512d;
+}
+.ctx-container .list-container .master li {
+  margin-bottom: 10px;
+}
+.ctx-container #team-form select {
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+    padding: 5px 10px;
+    background-color: #f6f7fb;
+    border: 1px solid #d4d9df;
+    margin-left: 35px;
+}
+.ctx-container #team-form select:focus{
+  border: 1px solid #fe8333;
+}
+.ctx-container #team-form button {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    font-family: 'microsoft yahei';
+    background-color: #fe8333;
+    cursor: pointer;
+    text-align: center;
+    padding: 4px 26px;
+    border-radius: 3px;
+    margin-left: 10px;
+    outline: none;
+}
+.ctx-container .member-items{
+    margin: 0px 35px 20px;
+}
+.ctx-container .member-items table {
+    width: 100%;
+    border: 1px solid #ededed;
+}
+.ctx-container table th{
+    height: 40px;
+    border-bottom: 1px solid #ededed;
+    color: #c3c3c3;
+    font-weight: normal;
+    font-size: 14px;
+}
+.ctx-container .member-items table td{
+    padding: 5px;
+    font-family: microsoft yahei;
+    word-wrap: break-word;
+    font-size: 14px;
+    text-align: center;
+}
+.ctx-container table tr{
+    border-bottom: 1px solid #ededed;
+}
+.ctx-container table td.yh{
+  width: 190px;
+    text-align: left;
+    padding-left: 15px;
+}
+.ctx-container table td.xm{
+    width: 80px;
+}
+.ctx-container table td.xh{
+    max-width: 90px;
+}
+.ctx-container table td.xb{
+    max-width: 40px;
+}
+.ctx-container table td.xx{
+    max-width: 110px;
+}
+.ctx-container table td.xy{
+    max-width: 110px;
+}
+.ctx-container table td.xz{
+    max-width: 120px;
+}
+.ctx-container .member-items table td.yh p {
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -60px;
+    width: 90px;
+    word-break: break-all;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 5px;
+}
+#member-search-form {
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-right: 35px;
+    top: 10px;
+}
+#member-search-form .textbox {
+    border: none;
+    float: left;
+    width: 180px;
+    height: 27px;
+    line-height: 24px;
+    padding: 0 6px;
+    outline: none;
+    border: 1px solid #c3c3c3;
+    vertical-align: top;
+    border-radius: 2px;
+}
+#member-search-form .textbox:focus{
+  border: 1px solid #fe8333;
+}
+#member-search-form .button {
+    width: 27px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    margin-left: -30px;
+    outline: none;
+    background: url("/static/themes/yiban/groups/img/s_h_b.eb6775f4ebe9.png");
+}

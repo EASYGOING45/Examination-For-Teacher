@@ -1,0 +1,77 @@
+
+<style>
+	.example-modal .modal {
+		position: relative;
+		top: auto;
+		bottom: auto;
+		right: auto;
+		left: auto;
+		display: block;
+		z-index: 1;
+	}
+
+	.example-modal .modal {
+		background: transparent !important;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="__CDN__/assets/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="__CDN__/assets/css/bootstrap.min.css"/>
+
+
+<!-- 以下区块为用户的答题入口 -->
+<section class="content">
+{foreach name="examList" item="exam" key="key"}
+{eq name ="exam.is_allow" value="1"}
+	<div class="example-modal">
+	  <div class="modal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<!-- <span aria-hidden="true">×</span></button> -->
+			  <h4 class="modal-title">{$exam.exam_name}</h4>
+			</div>
+			<div class="modal-body">
+			  <p>考试介绍</p>
+			</div>
+			<div class="modal-footer">
+			  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+			  <a type="button" class="btn btn-primary" href="index?examId=1&subject_id=1">开始答题AA</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+{/eq}
+
+	<!--  这一块与用户所能看到的UI关联不大 -->
+{eq name ="exam.is_allow" value="0"}
+	<div class="example-modal">
+	  <div class="modal">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<!-- <span aria-hidden="true">×</span></button> -->
+			  <h4 class="modal-title">{exam["exam_name"]}</h4>
+			</div>
+			<div class="modal-body">
+			  <p>考试介绍aa</p>
+			</div>
+			<div class="modal-footer">
+			  <!-- <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button> -->
+			  <button type="button" class="btn btn-primary">查看记录</button>
+			</div>
+		  </div>
+
+		</div>
+	  </div>
+	</div>
+{/eq}
+
+{/foreach}
+</section>
+
+
+
